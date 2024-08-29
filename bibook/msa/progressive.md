@@ -26,7 +26,7 @@ In this chapter, we delve into the mechanics of progressive alignment, exploring
 
 ### Progressive Alignment Steps
 
-The process builds alignments in a stepwise manner, starting with the most similar sequences and gradually incorporating others. Here's a detailed look at how to create a progressive alignment. Lests assume you start with $T$ sequences, $C=\{A_1, \ldots, A_T\}$.
+The process builds alignments in a stepwise manner, starting with the most similar sequences and gradually incorporating others. Here's a detailed look at how to create a progressive alignment. Lets assume you start with $T$ sequences, $C=\{A_1, \ldots, A_T\}$.
 
 1. Compute Pairwise Alignments: Initially, calculate all pairwise alignments between each pair of sequences in $C$ using a suitable algorithm such as Needleman-Wunsch or Smith-Waterman. This provides a matrix of scores or distances that indicate how similar or different each pair of sequences is.
 
