@@ -1,6 +1,6 @@
 # Multiple Sequence Alignments
 
-## Intoduction 
+## Introduction 
 
 While pairwise alignments enable comparisons between two sequences, many biological analyses require a more comprehensive approach: the alignment of multiple sequences simultaneously. Multiple sequence alignments (MSAs) offer a holistic view of sequence similarities and differences, illuminating functional and evolutionary relationships across diverse genomes and proteomes.
 
