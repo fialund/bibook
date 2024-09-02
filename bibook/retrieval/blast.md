@@ -67,7 +67,7 @@ The Basic Local Alignment Search Tool (BLAST) is a heuristic algorithm designed 
 
 4. **Alignment Scoring**: Each extended alignment is scored based on the similarity between the aligned regions, taking into account matches, mismatches, and gaps.
 
-5. **Statistical Evaluation**: BLAST calculates the statistical significance of each alignment using e-values, indicating how many alignments of the same quality would be found by chance in a database of a given size.
+5. **Statistical Evaluation**: BLAST calculates the statistical significance of each alignment using e-values (further explained below), indicating how many alignments of the same quality would be found by chance in a database of a given size.
 
 6. **Output**: The algorithm then lists all alignments above a threshold score, providing details such as alignment positions, scores, and statistical significance.
 
