@@ -133,7 +133,7 @@ These sequence lines represent the data to be analyzed and compared.
 
 The FASTA format's simplicity and clarity make it ideal for storing and sharing sequence data. It is supported by most bioinformatics tools, including alignment algorithms, database search tools, and genome browsers. Additionally, the format is highly adaptable, allowing for easy conversion to and from other sequence formats.
 
-FASTA files can contain multiple sequences, each represented by its own header and sequence lines, making them an efficient way to store large datasets. They are used in bioinformatics pipelines, providing a way to manage and share sequence information. Note, however, that FASTA is not a well defined format, and there are multiple variant in how both headers and sequence lines should be formated.
+FASTA files can contain multiple sequences, each represented by its own header and sequence lines, making them an efficient way to store large datasets. They are used in bioinformatics pipelines, providing a way to manage and share sequence information. Note, however, that FASTA is not a well defined format, and there are multiple variant in how both headers and sequence lines should be formatted.
 
 ## References
 
