@@ -75,7 +75,7 @@ This combined approach gives an overview of BLAST, highlighting its key features
 
 ## E-Values and Their Meaning
 
-BLAST assesses the statistical significance of alignments using the Gumbel extreme value distribution (EVD) model. This model estimates the probability of an alignment score being due to chance. An e-value (expect value) is a statistical measure used in BLAST to assess the significance of an alignment:
+BLAST assesses the statistical significance of alignments using the Gumbel extreme value distribution (EVD) model. This model estimates the probability of an alignment score being due to chance. An e-value (expectation value) is a statistical measure used in BLAST to assess the significance of an alignment:
 
 - **Definition**: The e-value represents the number of alignments expected to occur by chance in a database of a given size.
 - **Interpretation**: Lower e-values indicate more significant alignments. For example, an e-value of 0.01 suggests that this alignment quality would be obtained by chance 1 times out of hundred with the a query sequence of the same length of sequence and database size.
@@ -88,7 +88,7 @@ The e-values in BLAST searches provide a direct indication of alignment quality:
 
 ## How is the BLAST E-value Calculated?
 
-The E-value (expect value) is a statistical measure used in BLAST to assess the significance of an alignment between a query sequence and database sequences. It reflects the expected number of alignments that would occur by chance in a given database search. The E-value is calculated based on the alignment score $S$, the search space size $m × n$, and parameters derived from the scoring system and database composition, such as the Karlin-Altschul parameters ($K$ and $λ$). The formula for the E-value is:
+The E-value (expectation value) is a statistical measure used in BLAST to assess the significance of an alignment between a query sequence and database sequences. It reflects the expected number of alignments that would occur by chance in a given database search. The E-value is calculated based on the alignment score $S$, the search space size $m × n$, and parameters derived from the scoring system and database composition, such as the Karlin-Altschul parameters ($K$ and $λ$). The formula for the E-value is:
 
 $E = Kmne^{-\lambda S} $
 
@@ -109,7 +109,7 @@ BLAST comes in a couple of different versions, depending on its usage. Here are 
 
 - **BLASTn (Nucleotide BLAST):** Compares nucleotide sequences against a database or another sequence to identify evolutionary relationships. Useful in phylogenetics studies. 
 
-- **tBLASTn:** Searches for proteins in untranslated DNA sequences. Takes a protein sequence and compares it to all potential translations of a nucleotide sequence. Useful for finding protein-coding regions in ESTs and HTGs.
+- **tBLASTn:** Searches for proteins in untranslated DNA sequences. Takes a protein sequence and compares it to all potential translations of a nucleotide sequence. Useful for finding protein-coding regions in ESTs(Expressed Sequence Tags) and HTGs(High-Throughput Genomic Sequences).
 
 - **BLASTx:** Compares a nucleotide query, translated into six possible protein sequences, against a protein database. This tool is essential when DNA sequence reading frames are uncertain or contain errors that could impact protein coding. It provides combined statistics across all frames for new DNA analyses.
 
@@ -119,7 +119,7 @@ BLAST comes in a couple of different versions, depending on its usage. Here are 
 
 BLAST is using FASTA format as input format for its databases and queries. The FASTA format is a widely adopted standard for representing nucleotide and protein sequences in bioinformatics. Developed in the 1980s for the FASTA sequence alignment software, it has since become a versatile and essential format for storing and sharing sequence data. The FASTA format consists of two key components:
 
-1. **Header Line:** Each sequence begins with a header line, which starts with a greater-than symbol (`>`). The text following this symbol provides a description of the sequence. This description often includes information such as a unique identifier (e.g., accession number), the source organism, and other metadata. For example:  
+1. **Header Line:** Each sequence begins with a header line, which starts with a greater-than symbol (`>`). The text following this symbol provides a description of the sequence. This description often includes information such as a unique identifier (e.g. accession number), the source organism, and other metadata. For example:  
 `>sp|P12345|PROT_HUMAN Human Protein Name [Homo sapiens]`  
 In this example, "sp" indicates the Swiss-Prot database, "P12345" is the accession number, "PROT_HUMAN" is the unique identifier, and additional information follows.
 
