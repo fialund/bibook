@@ -63,7 +63,7 @@ The Basic Local Alignment Search Tool (BLAST) is a heuristic algorithm designed 
   
 1. **Seeding**: The matching k-tuples, known as "seeds," are used as anchor points for the alignment procedure. The list of k-tuples is expanded to include any k-tuples that match with an alignment score above a threshold T.
 
-3. **Extension**: BLAST extends these seeds in both directions, creating larger alignments. This extension continues until the alignment score drops below a threshold, preventing poor alignments from extending. These extended matches are known as high-scoring segment pairs (HSPs).
+3. **Extension**: BLAST extends these seeds in both directions, creating larger alignments. This extension continues until the alignment score drops below a threshold, preventing poor (or low-scoring) alignments from extending. These extended matches are known as high-scoring segment pairs (HSPs).
 
 4. **Alignment Scoring**: Each extended alignment is scored based on the similarity between the aligned regions, taking into account matches, mismatches, and gaps.
 
