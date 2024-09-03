@@ -107,7 +107,7 @@ The E-value is directly proportional to the search space size (m × n) and inver
 
 BLAST comes in a couple of different versions, depending on its usage. Here are the main versions of BLAST:
 
-- **BLASTn (Nucleotide BLAST):** Compares nucleotide sequences against a database or another sequence to identify evolutionary relationships. Useful in phylogenetics studies. 
+- **BLASTn (Nucleotide BLAST):** Compares nucleotide sequences against a database or another sequence to identify evolutionary relationships. It's highly sensitive to sequence similarity, making it ideal for identifying homologous sequences. It is useful in phylogenetics studies, identifying conserved genes across different species, and pinpointing specific genes or regions within extensive genomes.
 
 - **tBLASTn:** Searches for proteins in untranslated DNA sequences. Takes a protein sequence and compares it to all potential translations of a nucleotide sequence. Useful for finding protein-coding regions in ESTs and HTGs.
 
